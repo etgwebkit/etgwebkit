@@ -17,7 +17,7 @@
     "contao/core-bundle": ">=3.5,<=3.5.9999",
     "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*",
     "erdmannfreunde/euf_nutshell": ">=0.1",
-
+    "heimrichhannot/contao-slick": ">=1.3.5.0,<1.4-dev"
   },
   "replace": {
     "contao-legacy/euf_nutshell_kit": "self.version"
