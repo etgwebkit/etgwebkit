@@ -1,0 +1,58 @@
+.mod_slick_eventlist, .mod_slick_newslist{
+  @include make-row;
+}
+
+.slick-slide{
+  @include padding-default();
+}
+
+.slick-container:focus, .slick-slide:focus{
+  outline: 0;
+  border: 0;
+}
+
+.slick-next, .slick-prev{
+  border: none;
+  background: transparent;
+  font-size: 3rem;
+  @include vertical-align();
+  position: absolute;
+  z-index: 1;
+
+  &:hover, &:active, &:focus{
+    outline: 0;
+    border: 0;
+  }
+
+  &::before{
+    position: relative;
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 0.6em;
+    height: 0.6em;
+    @include vendor('transform', 'rotate(45deg)');
+    //margin-right: 0.5em;
+  }
+}
+
+.slick-next{
+  right: $grid__gutter--half;
+
+  &::before{
+    border-right: 0.2em solid $color-default;
+    border-top: 0.2em solid $color-default;
+
+  }
+}
+
+
+
+.slick-prev{
+  left: $grid__gutter--half;
+
+  &::before{
+    border-left: 0.2em solid $color-default;
+    border-bottom: 0.2em solid $color-default;
+  }
+}

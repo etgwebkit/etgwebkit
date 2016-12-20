@@ -17,26 +17,26 @@ var themePath     = "files/etgwebkit/";
 
 // browser sync proxy url: e.g. a vhost-based url, 
 // see also: https://www.browsersync.io/docs/options#option-proxy
-var bsProxy       = "http://localhost:8888/projects/etg-layout";
+var bsProxy       = "http://localhost:8888/projects";
 
 var paths = {
     src: {
-        styles:     themePath + 'src/scss/default.scss',
-        scripts:    themePath + 'src/js/**/*.js',
-        images:     themePath + 'src/img/**/*',
-        fonts:      themePath + 'src/fonts/**/*'
+        styles:     'src/scss/default.scss',
+        scripts:    'src/js/**/*.js',
+        images:     'src/img/**/*',
+        fonts:      'src/fonts/**/*'
     },
     dist: {
-        styles:     themePath + 'dist/css',
-        scripts:    themePath + 'dist/js',
-        images:     themePath + 'dist/img',
-        fonts:      themePath + 'dist/fonts'
+        styles:     'dist/statics/css',
+        scripts:    'dist/statics/js',
+        images:     'dist/statics/img',
+        fonts:      'dist/statics/fonts'
     },
     watch: {
-        styles:     themePath + 'src/scss/**/*.scss',
-        scripts:    themePath + 'src/js/**/*.js',
-        images:     themePath + 'src/img/**/*',
-        templates:  'templates/**/*'
+        styles:     'src/scss/**/*.scss',
+        scripts:    'src/js/**/*.js',
+        images:     'src/img/**/*',
+        templates:  'dist/TL_ROOT/templates/**/*'
     },
 };
 

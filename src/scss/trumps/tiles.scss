@@ -1,0 +1,96 @@
+/* Tiles */
+.tiles {
+
+  $duration: 0.5s;
+  $ease: 'ease';
+
+  .block, .slick-slide {
+    @include vendor('transition', (
+            'transform #{$duration} #{$ease}',
+            'opacity #{$duration} #{$ease}'
+    ));
+    position: relative;
+    border-radius: $base-border-radius;
+    color: $color-text--inverted;
+    margin-top: $grid__gutter--half;
+    margin-bottom: $grid__gutter--half;
+
+    //Headline aus CE_ Standardtemplate ausblenden
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+      display: none;
+    }
+
+    .image_container {
+        @include vendor('transition', 'transform #{$duration} #{$ease}');
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+
+        &:before {
+          @include vendor('pointer-events', 'none');
+          @include vendor('transition', (
+                  'background-color #{$duration} #{$ease}',
+                  'opacity #{$duration} #{$ease}'
+          ));
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0;
+          background-color: $color-default;
+        }
+    }
+
+    .tiles-content{
+      @include vendor('transition', (
+              'top #{$duration} #{$ease}'
+      ));
+      color: $color-text--inverted;
+      z-index: 2;
+      display: block;
+      @include vertical-align();
+      position: absolute;
+      text-align: center;
+      padding: 1rem;
+
+      //Make sure all headings are the same color
+      h1, h2, h3, h4, h5, h6{
+        color: $color-text--inverted;
+      }
+    }
+
+    //Hover Settings
+    body:not(.is-touch) & {
+      &:hover {
+
+        .image_container {
+          @include vendor('transform', 'scale(1.1)');
+
+          &:before {
+            opacity: 0.5;
+          }
+        }
+
+        .tiles-content{
+          top: 40%;
+        }
+      }
+    }
+  }
+
+  .slick-slide .tiles-content{
+    width: 100%;
+    margin-left: -$grid__gutter--half;
+  }
+}
+
