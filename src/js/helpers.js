@@ -8,4 +8,6 @@
     || (navigator.msMaxTouchPoints > 0)){
         $body.addClass('is-touch');
     }
+
+    objectFitImages();
 })(jQuery);
