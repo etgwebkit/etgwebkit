@@ -11,18 +11,17 @@ var notify        = require('gulp-notify');
 var cleanCSS      = require('gulp-clean-css');
 var sourcemaps    = require('gulp-sourcemaps');
 var browserSync   = require("browser-sync").create();
+var concat        = require('gulp-concat');
 
 
-var themePath     = "files/etgwebkit/";
-
-// browser sync proxy url: e.g. a vhost-based url, 
+// browser sync proxy url: e.g. a vhost-based url,
 // see also: https://www.browsersync.io/docs/options#option-proxy
 var bsProxy       = "http://localhost:8888/projects";
 
 var paths = {
     src: {
         styles:     'src/scss/default.scss',
-        scripts:    'src/js/**/*.js',
+        scripts:    ['node_modules/object-fit-images/dist/ofi.browser.js','src/js/**/*.js'],
         images:     'src/img/**/*',
         fonts:      'src/fonts/**/*'
     },
@@ -37,7 +36,7 @@ var paths = {
         scripts:    'src/js/**/*.js',
         images:     'src/img/**/*',
         templates:  'dist/TL_ROOT/templates/**/*'
-    },
+    }
 };
 
 // reading your sass files, add autoprefixer options, create sourcemaps, generate css file, inject css via browser-sync
@@ -74,6 +73,7 @@ gulp.task('scripts', function() {
     gulp.src(paths.src.scripts)
     	.pipe(include())
         .pipe(uglify())
+        .pipe(concat('helpers.js'))
         .pipe(gulp.dest(paths.dist.scripts))
 });
 
@@ -81,7 +81,7 @@ gulp.task('scripts', function() {
 gulp.task('images', function () {
     return gulp.src(paths.src.images)
         .pipe(imagemin({
-          progressive: true,
+          progressive: true
         }))
         .pipe(gulp.dest(paths.dist.images));
 });
