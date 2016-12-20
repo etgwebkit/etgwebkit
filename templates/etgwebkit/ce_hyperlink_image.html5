@@ -1,0 +1,19 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+    <?= $this->embed_pre ?>
+    <a href="<?= $this->href ?>" class="hyperlink_img" title="<?= $this->linkTitle ?>"<?= $this->attribute ?><?= $this->target ?>>
+        <figure class="image_container">
+        <?php $this->insert('picture_default', $this->picture); ?>
+        </figure>
+<div class="tiles-content">
+        <h6><?= $this->headline ?></h6>
+        <?php if ($this->caption): ?>
+                      <figcaption class="caption"><?= $this->caption ?></figcaption>
+                <?php endif; ?>
+               </div>
+    </a>
+    <?= $this->embed_post ?>
+
+<?php $this->endblock(); ?>

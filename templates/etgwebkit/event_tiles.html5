@@ -1,0 +1,20 @@
+<div class="event layout_tiles<?= $this->classList ?>">
+<figure class="image_container" >
+    <?php $this->insert('picture_default', $this->picture); ?>
+</figure>
+  <div class="tiles-content">
+  <?php if ($this->hasDetails): ?>
+      <h2><a href="<?= $this->href ?>" title="<?= $this->title ?> (<?php if ($this->day) echo $this->day . ', '; ?><?= $this->date ?><?php if ($this->time) echo ', ' . $this->time; ?>)"<?= $this->target ?>><?= $this->link ?></a></h2>
+    <?php else: ?>
+      <h2><?= $this->title ?></h2>
+    <?php endif; ?>
+    <?php if ($this->header): ?>
+      <div class="header<?= $this->classHeader ?>">
+        <?php if ($this->firstDay): ?><span class="day"><?= $this->firstDay ?>, </span><?php endif; ?><span class="date"><?= $this->firstDate ?><?php if ($this->time) echo ', ' . $this->time; ?></span>
+      </div>
+    <?php endif; ?>
+    <div class="caption">
+    <?= $this->teaser ?>
+    </div>
+  </div>
+</div>
