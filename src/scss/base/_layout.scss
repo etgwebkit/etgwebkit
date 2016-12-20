@@ -74,20 +74,51 @@
 
 .homepage [id="header"]{
   height: 100vh;
-  background-image: url(../../../../files/inhalt/images/header.jpg);
   background-attachment: fixed;
   background-size: cover;
+}
+
+.fullscreen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+
+  img{
+    object-fit: cover;
+    height: 100vh;
+    font-family: 'object-fit: cover;' //IE HACK for object-fit polyfill
+  }
+
 }
 
 [id="main"]{
   margin-bottom: 3rem;
+  background-color: #fff;
 }
 
 [id="Bullseye"]{
-  background-image: url(../../../../files/inhalt/images/bullseye.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 50vh;
+
+  .mod_article{
+    padding: 0;
+
+  }
+  .ce_image{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  img{
+    object-fit: cover;
+    height: 100vh;
+    font-family: 'object-fit: cover;' //IE HACK for object-fit polyfill
+  }
+
 }
 
 [id="Infobar"]{
