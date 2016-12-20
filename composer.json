@@ -24,7 +24,7 @@
   },
   "extra": {
     "contao": {
-      "files": {
+      "sources": {
         "files/etgwebkit": "files/etgwebkit",
         "templates/etgwebkit":"templates/etgwebkit"
       }
