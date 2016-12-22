@@ -5,6 +5,7 @@
   "type": "contao-module",
   "homepage": "https://github.com/digitalingenieur/etgwebkit",
   "license": "GPL-3.0+",
+  "version": "0.1.2",
   "authors":[
     {
       "name":"Samuel Heer | diging.",
