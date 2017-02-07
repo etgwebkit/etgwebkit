@@ -1,11 +1,11 @@
 {
-  "name": "digitalingenieur/etgwebkit",
+  "name": "etgwebkit/etgwebkit",
   "description": "Simple Webkit for ETG Churches",
   "keywords": ["contao", "etg", "church"],
   "type": "contao-module",
   "homepage": "https://github.com/digitalingenieur/etgwebkit",
   "license": "GPL-3.0+",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "authors":[
     {
       "name":"Samuel Heer | diging.",
@@ -13,12 +13,22 @@
       "role":"Developer"
     }
   ],
+  "repositories": [
+    {
+        "type":"vcs",
+        "url":"../contao-slick"
+    },
+    {
+        "type":"vcs",
+        "url":"../euf_grid"
+    }
+  ],
   "require": {
     "php": ">=5.3",
-    "contao/core-bundle": ">=3.5,<=3.5.9999",
+    "contao/core-bundle": "~3.5 || ~4.1",
     "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*",
-    "heimrichhannot/contao-slick": ">=1.3.5.0,<1.4-dev",
-    "erdmannfreunde/euf_grid": "^2.0"
+    "etgwebkit/contao-slick": ">=1.3.5.0,<1.4-dev",
+    "etgwebkit/euf_grid": "^2.0"
   },
   "require-dev":{
     "erdmannfreunde/euf_nutshell": ">=0.1"
