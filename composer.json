@@ -27,7 +27,7 @@
     "contao/core-bundle": "~3.5 || ~4.1",
     "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*",
     "heimrichhannot/contao-slick": "dev-master",
-    "etgwebkit/euf_grid": "dev-master"
+    "erdmannfreunde/euf_grid": "dev-master"
   },
   "extra": {
     "contao": {
