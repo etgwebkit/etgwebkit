@@ -20,30 +20,28 @@ var exec            = require('child_process').exec;
 
 // browser sync proxy url: e.g. a vhost-based url,
 // see also: https://www.browsersync.io/docs/options#option-proxy
-var bsProxy       = "http://localhost:8888/projects";
-
-var version = composer_json.version;
+var bsProxy       = "http://etgwebkit.dev";
 
 var paths = {
     src: {
-        styles:     'src/scss/default.scss',
+        styles:     'src/scss/etgwebkit-0.1.scss',
         scripts:    ['node_modules/object-fit-images/dist/ofi.browser.js','src/js/**/*.js'],
-        images:     'src/img/**/*',
-        fonts:      'src/fonts/**/*',
-        templates:  'src/templates/**/*'
+        //images:     'src/img/**/*',
+        //fonts:      'src/fonts/**/*',
+        //templates:  'src/templates/**/*'
     },
     dist: {
-        styles:     'dist/static/'+version+'/css',
-        scripts:    'dist/static/'+version+'/js',
-        images:     'dist/static/'+version+'/img',
-        fonts:      'dist/static/'+version+'/fonts',
-        templates:  'dist/TL_ROOT/templates/etgwebkit'
+        styles:     'dist/TL_ROOT/files/etgwebkit/theme/css',
+        scripts:    'dist/TL_ROOT/files/etgwebkit/theme/js',
+        //images:     'dist/static/img',
+        //fonts:      'dist/static/fonts',
+        //templates:  'dist/TL_ROOT/templates/etgwebkit'
     },
     watch: {
         styles:     'src/scss/**/*.scss',
         scripts:    'src/js/**/*.js',
-        images:     'src/img/**/*',
-        templates:  'dist/TL_ROOT/templates/**/*'
+        //images:     'src/img/**/*',
+        //templates:  'dist/TL_ROOT/templates/**/*'
     }
 };
 
@@ -81,24 +79,24 @@ gulp.task('scripts', function() {
     gulp.src(paths.src.scripts)
     	.pipe(include())
         .pipe(uglify())
-        .pipe(concat('helpers.js'))
+        .pipe(concat('etgwebkit.js'))
         .pipe(gulp.dest(paths.dist.scripts))
 });
 
 // read and optimize images
-gulp.task('images', function () {
+/*gulp.task('images', function () {
     return gulp.src(paths.src.images)
         .pipe(imagemin({
           progressive: true
         }))
         .pipe(gulp.dest(paths.dist.images));
-});
+});*/
 
-gulp.task('templates',function(){
+/*gulp.task('templates',function(){
    return gulp.src(paths.src.templates)
        .pipe(replace('{{version}}',composer_json.version))
        .pipe(gulp.dest(paths.dist.templates))
-});
+});*/
 
 // copy static files from src to dist
 gulp.task('copy', function() {
@@ -120,23 +118,25 @@ gulp.task('serve', ['styles'], function() {
 });
 
 //bumper
-gulp.task('bump', function(){
+/*gulp.task('bump', function(){
     gulp.src(['./package.json','./composer.json'])
         .pipe(bump())
         //.pipe(bump("major"))
         //.pipe(bump("minor"))
         //.pipe(bump("patch")) //default
         .pipe(gulp.dest('./'));
-});
+
+});*/
 
 
-gulp.task('adjustLatestSymlink', function(){
+/*gulp.task('adjustLatestSymlink', function(){
 
     exec('rm dist/static/latest');
     console.log(version);
     exec('ln -s dist dist/static/latest');
-});
+});*/
 
 gulp.task('default', ['serve']);
-gulp.task('deploy', ['minify_css', 'scripts', 'images','templates']);
-gulp.task('version', ['bump','deploy','adjustLatestSymlink']);
+//gulp.task('deploy', ['minify_css', 'scripts', 'images','templates']);
+gulp.task('deploy', ['minify_css', 'scripts']);
+gulp.task('version', ['bump','deploy']);

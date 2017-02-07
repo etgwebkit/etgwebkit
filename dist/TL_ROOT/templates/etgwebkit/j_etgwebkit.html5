@@ -1,4 +1,0 @@
-<?php 
-	$GLOBALS['TL_CSS'][] = 'http://statics.etgwebkit.diging.de/0.1.2/css/default.css';
-	$GLOBALS['TL_JAVASCRIPT'][] = 'http://statics.etgwebkit.diging.de/0.1.2/js/helpers.js';
-?>
