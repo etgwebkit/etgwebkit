@@ -16,10 +16,9 @@
   "require": {
     "php": ">=5.3",
     "contao/core-bundle": "~3.5 || ~4.1",
-    "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*"
-  },
-  "require-dev":{
-    "erdmannfreunde/euf_nutshell": ">=0.1"
+    "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*",
+    "etgwebkit/contao-slick": "dev-master",
+    "etgwebkit/euf_grid": "dev-master",
   },
   "extra": {
     "contao": {
