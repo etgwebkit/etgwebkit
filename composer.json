@@ -15,18 +15,18 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/etgwebkit/contao-slick.git"
+      "url": "https://github.com/etgwebkit/contao-slick"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/etgwebkit/euf_grid.git"
+      "url": "https://github.com/etgwebkit/euf_grid"
     }
   ],
   "require": {
     "php": ">=5.3",
     "contao/core-bundle": "~3.5 || ~4.1",
     "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*",
-    "etgwebkit/contao-slick": "dev-master",
+    "heimrichhannot/contao-slick": "dev-master",
     "etgwebkit/euf_grid": "dev-master"
   },
   "extra": {
@@ -34,7 +34,8 @@
       "sources": {
         "dist/TL_ROOT/files/etgwebkit": "files/etgwebkit",
         "dist/TL_ROOT/templates/etgwebkit":"templates/etgwebkit",
-        "dist/TL_ROOT/templates/etgwebkit.sql": "templates/etgwebkit.sql"
+        "dist/TL_ROOT/templates/etgwebkit.sql": "templates/etgwebkit.sql",
+        "dist/TL_ROOT/templates/etgwebkit.sql": "templates/etgwebkit-contao4.sql"
       }
     }
   }
