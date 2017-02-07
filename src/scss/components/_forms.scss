@@ -21,3 +21,9 @@
 // --------------------------------------------------
 
 // PUT YOUR OWN STYLES HERE
+
+//THIS ARE CONTAO 4 HACKS, CAN BE REMOVED AS ITS SUPPORTED FROM EUF
+button.submit {
+  @extend %button;
+  @extend button.btn--primary;
+}
