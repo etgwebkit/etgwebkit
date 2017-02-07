@@ -25,7 +25,8 @@
     "contao": {
       "sources": {
         "dist/TL_ROOT/files/etgwebkit": "files/etgwebkit",
-        "dist/TL_ROOT/templates/etgwebkit":"templates/etgwebkit"
+        "dist/TL_ROOT/templates/etgwebkit":"templates/etgwebkit",
+        "dist/TL_ROOT/templates/etgwebkit.sql": "templates/etgwebkit.sql",
       }
     }
   }
