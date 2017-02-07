@@ -1,5 +1,5 @@
 {
-  "name": "digitalingenieur/etgwebkit",
+  "name": "etgwebkit/etgwebkit",
   "description": "Simple Webkit for ETG Churches",
   "keywords": ["contao", "etg", "church"],
   "type": "contao-module",
