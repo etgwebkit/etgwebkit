@@ -15,11 +15,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/etgwebkit/contao-slick"
+      "url": "https://github.com/etgwebkit/contao-slick.git"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/etgwebkit/euf_grid"
+      "url": "https://github.com/etgwebkit/euf_grid.git"
     }
   ],
   "require": {
