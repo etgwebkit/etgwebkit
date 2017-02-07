@@ -24,7 +24,7 @@ var bsProxy       = "http://etgwebkit.dev";
 
 var paths = {
     src: {
-        styles:     'src/scss/etgwebkit-0.1.scss',
+        styles:     'src/scss/etgwebkit.scss',
         scripts:    ['node_modules/object-fit-images/dist/ofi.browser.js','src/js/**/*.js'],
         //images:     'src/img/**/*',
         //fonts:      'src/fonts/**/*',
