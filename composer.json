@@ -13,6 +13,16 @@
       "role":"Developer"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/etgwebkit/contao-slick"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/etgwebkit/euf_grid"
+    }
+  ],
   "require": {
     "php": ">=5.3",
     "contao/core-bundle": "~3.5 || ~4.1",
