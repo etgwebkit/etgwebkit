@@ -6,6 +6,7 @@
   "homepage": "https://github.com/digitalingenieur/etgwebkit",
   "license": "GPL-3.0+",
   "version": "0.2.0",
+  "minimum-stability": "dev",
   "authors":[
     {
       "name":"Samuel Heer | diging.",
