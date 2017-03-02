@@ -1,4 +1,4 @@
-# etgwebkit
+# Simple Webkit for ETG Churches
 
 #Installation
 Das ETG Webkit basiert auf dem CMS Contao in Version 4. Eine Anleitung zur Installation von Contao findet sich hier.
