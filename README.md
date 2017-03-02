@@ -11,12 +11,30 @@ Hinweis: Falls das ETG Webkit auf einem neu eingerichtet Uberspace-Account insta
 1. Contao installieren per Composer
 `composer create-project contao/managed-edition ORDNERNAME`
 
-2. Abhänigkeiten installieren
-`composer require etgwebkit/etgwebkit`
+2. DocumentRoot auf das Unterverzeichnis "web" festlegen
 
 3. Contao Installation ausführen
 /install.php
 
-4. Im Installationstool Template importieren
+4. composer.json anpassen
+Dieser Extra Schritt ist solange nötig, wie @heimrichhannot/contao-slick für Contao 4 offiziell angeboten wird.
+`"repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/etgwebkit/contao-slick"
+    }
+  ],`
+ `"require":{
+ ...
+ 	"etgwebkit/etgwebkit": "^0.2",
+    "heimrichhannot/contao-slick": "@dev"
+ }
+ ` 
+~~4. Abhänigkeiten installieren
+`composer require etgwebkit/etgwebkit`~~
 
-5. Einloggen mit Username und Passwort
+5. Datenbankupdate in der Contao Installation durchführen
+
+6. Im Installationstool Template importieren
+
+7. Einloggen mit Username und Passwort
