@@ -1,5 +1,7 @@
 .mod_slick_eventlist, .mod_slick_newslist{
   @include make-row;
+  margin-top:-5rem;
+  padding-top:5rem;
 }
 
 .slick-slide{
@@ -14,8 +16,8 @@
 .slick-next, .slick-prev{
   border: none;
   background: transparent;
-  font-size: 3rem;
-  @include vertical-align();
+  font-size: 2rem;
+  top: -4rem;
   position: absolute;
   z-index: 1;
 
@@ -49,7 +51,7 @@
 
 
 .slick-prev{
-  left: $grid__gutter--half;
+  right: $grid__gutter*2;
 
   &::before{
     border-left: 0.2em solid $color-default;
