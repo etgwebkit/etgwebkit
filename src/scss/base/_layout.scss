@@ -74,8 +74,8 @@
 
 .homepage [id="header"]{
   height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
+  //background-attachment: fixed;
+  //background-size: cover;
 }
 
 .fullscreen{
@@ -83,6 +83,7 @@
   top: 0;
   left: 0;
   padding: 0;
+  max-width: none;
 
   img{
     object-fit: cover;
