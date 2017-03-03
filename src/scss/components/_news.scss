@@ -21,3 +21,10 @@
 // --------------------------------------------------
 
 // PUT YOUR OWN STYLES HERE
+.news-grid{
+	.pagination{
+		padding-top: 2rem;
+		padding-left:  $grid__gutter--half;
+  		padding-right: $grid__gutter--half;
+	}
+}
