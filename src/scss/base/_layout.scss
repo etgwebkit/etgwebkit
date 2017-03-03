@@ -22,10 +22,13 @@
 
 // PUT YOUR OWN STYLES HERE
 [id="header"]{
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 
   .logo{
+    padding: 2rem 3rem;
+
     display: block;
     border-bottom: 0;
     color: inherit;
@@ -33,8 +36,6 @@
     letter-spacing:$base-font-letter-spacing;
     text-decoration: none;
     text-transform: uppercase;
-    position: absolute;
-    z-index: 1;
 
     > * {
       display: inline-block;
@@ -51,11 +52,26 @@
       }
     }
   }
+}
 
-  .opener{
-    color: $color-text--inverted;
-    @include vertical-align;
-    position: absolute;
+.header--transparent [id="header"]{
+  background-color: transparent;
+}
+
+[id="heroImage"]{
+
+  img{
+    object-fit: cover;
+    height: 100vh;
+    font-family: 'object-fit: cover;' //IE HACK for object-fit polyfill
+  }
+
+  .ce_text{
+      font-size: 1.3em;
+
+      color: $color-text--inverted;
+      @include vertical-align;
+      position: absolute;
 
     h1{
       color: $color-text--inverted;
@@ -65,35 +81,15 @@
       font-size: 2.5rem;
 
     }
-
-    .ce_text{
-      font-size: 1.3em;
-    }
   }
 }
-
-.homepage [id="header"]{
-  height: 100vh;
-  //background-attachment: fixed;
-  //background-size: cover;
-}
-
-.fullscreen{
-  position: absolute;
-  top: 0;
-  left: 0;
+.article--full{
   padding: 0;
-  max-width: none;
-
-  img{
-    object-fit: cover;
-    height: 100vh;
-    font-family: 'object-fit: cover;' //IE HACK for object-fit polyfill
-  }
 
 }
 
 [id="main"]{
+  padding-top: 5rem;
   margin-bottom: 3rem;
   background-color: #fff;
 }

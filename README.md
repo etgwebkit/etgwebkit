@@ -5,7 +5,6 @@ Das ETG Webkit basiert auf dem CMS Contao in Version 4. Eine Anleitung zur Insta
 
 ###Vorbereitung: Composer auf Uberspace
 Hinweis: Falls das ETG Webkit auf einem neu eingerichtet Uberspace-Account installiert werden soll, muss Composer zuerst installiert werden:
-
 `curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=$HOME/bin`
 
 
