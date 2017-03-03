@@ -15,11 +15,12 @@
 
 .slick-next, .slick-prev{
   border: none;
-  background: transparent;
+  background: $color-page-background;
   font-size: 2rem;
-  top: -4rem;
+  top: -3.7rem;
   position: absolute;
   z-index: 1;
+  padding: 0 1rem;
 
   &:hover, &:active, &:focus{
     outline: 0;

@@ -1,0 +1,29 @@
+.headline-link{
+	
+	margin-bottom: 1rem;
+	overflow: visible;
+}
+
+@include media-query(screen-offcanvas) {
+	.headline-link{
+		height: 2rem;
+		margin-bottom: 2rem;
+		border-bottom: 1px solid $color-default; 	
+
+		& > h1{
+		
+			background-color: $color-page-background;
+			display: inline;
+			padding-right: 1rem;
+
+		}	
+
+		& > a{
+			position: absolute;
+			display: inline;
+			background-color: $color-page-background;
+			padding: 1rem;
+			margin-left: 2rem;
+		}
+	}
+}
