@@ -1,6 +1,6 @@
 # ETG Webkit change log
 
-### DEV
+### 0.2.5 (2017-03-03)
 
 *added class .headline-links for headlines which should include a link to a page, eg. blog
 *changed complete header handling, introduced content section heroImage, always show a header bar (for future menu)
