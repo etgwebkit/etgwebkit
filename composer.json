@@ -25,6 +25,9 @@
     "heimrichhannot/contao-slick": "dev-contao4",
     "erdmannfreunde/euf_grid": "2.*"
   },
+  "require-dev":{
+    "erdmannfreunde/euf_nutshell":"~0.2"
+  },
   "extra": {
     "contao": {
       "sources": {
