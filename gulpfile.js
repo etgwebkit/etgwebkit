@@ -1,4 +1,3 @@
-var composer_json         = require('./composer.json');
 var gulp          = require('gulp');
 var plumber       = require('gulp-plumber');
 var sass          = require('gulp-sass');
@@ -13,10 +12,6 @@ var cleanCSS      = require('gulp-clean-css');
 var sourcemaps    = require('gulp-sourcemaps');
 var browserSync   = require("browser-sync").create();
 var concat        = require('gulp-concat');
-var bump          = require('gulp-bump');
-var replace       = require('gulp-string-replace');
-var exec            = require('child_process').exec;
-
 
 // browser sync proxy url: e.g. a vhost-based url,
 // see also: https://www.browsersync.io/docs/options#option-proxy
@@ -117,26 +112,5 @@ gulp.task('serve', ['styles'], function() {
     gulp.watch(paths.watch.scripts, ['scripts']).on('change', browserSync.reload);
 });
 
-//bumper
-/*gulp.task('bump', function(){
-    gulp.src(['./package.json','./composer.json'])
-        .pipe(bump())
-        //.pipe(bump("major"))
-        //.pipe(bump("minor"))
-        //.pipe(bump("patch")) //default
-        .pipe(gulp.dest('./'));
-
-});*/
-
-
-/*gulp.task('adjustLatestSymlink', function(){
-
-    exec('rm dist/static/latest');
-    console.log(version);
-    exec('ln -s dist dist/static/latest');
-});*/
-
 gulp.task('default', ['serve']);
-//gulp.task('deploy', ['minify_css', 'scripts', 'images','templates']);
 gulp.task('deploy', ['minify_css', 'scripts']);
-gulp.task('version', ['bump','deploy']);
