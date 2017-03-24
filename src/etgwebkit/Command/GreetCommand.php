@@ -1,5 +1,6 @@
 <?php
-namespace etgwebkit\Command;
+
+namespace ETGWebkit\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
