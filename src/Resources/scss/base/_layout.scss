@@ -1,0 +1,238 @@
+// *
+// * Erdmann & Freunde - Nutshell
+// * Starterkit
+// * erdmann-freunde.de/nutshell/
+// *
+// * Lizenziert unter MIT OPEN SOURCE 
+// *
+
+//
+// BASE/LAYOUT
+// --------------------------------------------------
+
+// VARIABLES
+
+// USED FROM _variables.scss
+
+// --------------------------------------------------
+
+@import "../../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/base/layout";
+
+// --------------------------------------------------
+
+// PUT YOUR OWN STYLES HERE
+[id="header"]{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+
+  .logo{
+    padding: 2rem 0;
+
+    display: block;
+    border-bottom: 0;
+    color: inherit;
+    font-weight: $base-font-weight-bold;
+    letter-spacing:$base-font-letter-spacing;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .symbol {
+      margin-right: 1em;
+
+      img {
+        display: block;
+        width: 3em;
+        height: 2em;
+      }
+    }
+  }
+}
+
+.header--transparent [id="header"]{
+  background-color: transparent;
+}
+
+[id="heroImage"]{
+  background-color: $color-page-background;
+
+  .mod_article{
+     @include wrapper-max(none);
+      padding: 0;
+      height: 100vh;
+
+    .first{
+      position: absolute;
+
+    }
+  }
+
+
+
+  img{
+    object-fit: cover;
+    height: 100vh;
+    font-family: 'object-fit: cover;' //IE HACK for object-fit polyfill
+  }
+
+  .ce_text{
+      font-size: 1.3em;
+
+      color: $color-text--inverted;
+      @include vertical-align;
+      //position: absolute;
+
+    h1{
+      color: $color-text--inverted;
+      font-weight: $base-font-weight-bold;
+      line-height: 3rem;
+      font-size: 2.5rem;
+
+    }
+  }
+}
+
+
+[id="main"]{
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+  background-color: #fff;
+}
+
+[id="Bullseye"]{
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+
+  .mod_article{
+    padding: 0;
+
+  }
+  .ce_image{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  img{
+    object-fit: cover;
+    height: 100vh;
+    font-family: 'object-fit: cover;' //IE HACK for object-fit polyfill
+  }
+
+}
+
+[id="Infobar"]{
+
+  background-color: $color-default;
+  color: $color-text--inverted;
+
+  a {
+    color: $color-text--inverted;
+  }
+
+  .block{
+    position: relative;
+  }
+
+  h2{
+    margin: 1em 0 1em 0;
+  }
+
+  .event {
+    @extend %clearfix;
+    margin-bottom: $base-spacing-unit/2;
+  }
+
+  .layout_upcoming {
+    time,
+    a {
+      padding-top: 0;
+      display: block;
+    }
+  }
+
+  ul, ol, dd {
+    margin-left: 0;
+  }
+
+  .row > div{
+    margin-bottom: $base-spacing-unit;
+  }
+}
+
+[id="footer"]{
+  padding: 5rem 0;
+  background-color: $color-page-background-alt;
+
+  .mod_article{
+    >div{
+      margin-bottom: $base-spacing-unit;
+    }
+  }
+
+  h2{
+    margin-bottom: 1.5rem
+  }
+
+  .link_impressum{
+    padding-bottom: $base-spacing-unit*2;
+  }
+
+  label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: $base-font-weight-bold;
+    margin: 0 0 $base-spacing-unit 0;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    @include vendor('appearance', 'none');
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px $base-border-color;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+
+    &:invalid {
+      box-shadow: none;
+    }
+
+    &:focus {
+      border-bottom-color: $color-default;
+      box-shadow: inset 0 -1px 0 0 $color-default;
+    }
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    height: 3rem;
+  }
+
+  textarea {
+    padding: 0;
+    min-height: (3rem * 1.25);
+  }
+
+  input[type="submit"]{
+    background-color: $color-gray;
+  }
+}

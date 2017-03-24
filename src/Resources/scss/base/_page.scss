@@ -1,0 +1,41 @@
+// *
+// * Erdmann & Freunde - Nutshell
+// * Starterkit
+// * erdmann-freunde.de/nutshell/
+// *
+// * Lizenziert unter MIT OPEN SOURCE 
+// *
+
+//
+// BASE/PAGE
+// --------------------------------------------------
+
+// VARIABLES
+
+// USED FROM _variables.scss
+
+// --------------------------------------------------
+
+@import "../../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/base/page";
+
+// --------------------------------------------------
+
+// PUT YOUR OWN STYLES HERE
+.accent{
+	background-color: $color-default;
+    padding: $base-spacing-unit;
+    color: $color-text--inverted;
+
+    a{
+    	color: $color-text--inverted;
+    }
+}
+
+@for $i from 1 to 6 {
+  .bg-accent#{$i}, .featured#{$i} {
+    background-color: nth($color-accent,$i);
+    padding: $base-spacing-unit;
+    color: $color-text--inverted;
+  }
+}
+

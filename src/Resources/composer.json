@@ -1,0 +1,7 @@
+{
+  "name": "etgwebkit/etgwebkit",
+  "require": {
+    "contao/core":">=3.5,<=3.5.9999",
+    "erdmannfreunde/euf_nutshell": "~0.2"
+  }
+}

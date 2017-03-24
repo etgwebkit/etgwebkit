@@ -19,16 +19,15 @@ var bsProxy       = "http://etgwebkit.dev";
 
 var paths = {
     src: {
-        styles:     'src/scss/etgwebkit.scss',
+        styles:     'src/Resources/scss/etgwebkit.scss',
         scripts:    [
                     'node_modules/object-fit-images/dist/ofi.browser.js',
-                    'src/js/**/*.js'
+                    'src/Resources/js/**/*.js'
                     ],
         //images:     'src/img/**/*',
         //fonts:      'src/fonts/**/*'
     },
-    dist: {
-        css:        'src/css', 
+    dist: { 
         styles:     'dist/TL_ROOT/files/etgwebkit/theme/css',
         scripts:    'dist/TL_ROOT/files/etgwebkit/theme/js',
         //images:     'dist/static/img',
@@ -52,7 +51,7 @@ gulp.task('styles', function() {
     			cascade: false
     		}))
         .pipe(sourcemaps.write('../maps'))
-        .pipe(gulp.dest(paths.dist.css))
+        .pipe(gulp.dest(paths.dist.styles))
         .pipe(browserSync.stream({match: '**/*.css'}));
 });
 

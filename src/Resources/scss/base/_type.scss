@@ -1,0 +1,37 @@
+// *
+// * Erdmann & Freunde - Nutshell
+// * Starterkit
+// * erdmann-freunde.de/nutshell/
+// *
+// * Lizenziert unter MIT OPEN SOURCE 
+// *
+
+//
+// BASE/TYPE
+// --------------------------------------------------
+
+// VARIABLES
+$headings__font-family: "Source Sans Pro" , "Helvetica", sans-serif;
+$headings__font-weight: 600;
+
+
+
+// USED FROM _variables.scss
+
+// --------------------------------------------------
+
+@import "../../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/base/type";
+
+// --------------------------------------------------
+
+// PUT YOUR OWN STYLES HERE
+h1{
+  color: $color-default;
+}
+
+h6{
+  font-size: 1rem;
+  font-weight: $base-font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing:$base-font-letter-spacing;
+}

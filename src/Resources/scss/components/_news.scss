@@ -1,0 +1,30 @@
+// *
+// * Erdmann & Freunde - Nutshell
+// * Starterkit
+// * erdmann-freunde.de/nutshell/
+// *
+// * Lizenziert unter MIT OPEN SOURCE 
+// *
+
+//
+// COMPONENTS/NEWS
+// --------------------------------------------------
+
+// VARIABLES
+
+// USED FROM _variables.scss
+
+// --------------------------------------------------
+
+@import "../../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/components/news";
+
+// --------------------------------------------------
+
+// PUT YOUR OWN STYLES HERE
+.news-grid{
+	.pagination{
+		padding-top: 2rem;
+		padding-left:  $grid__gutter--half;
+  		padding-right: $grid__gutter--half;
+	}
+}
