@@ -39,6 +39,9 @@ Das ETG Webkit basiert auf dem CMS Contao in Version 4. Eine Anleitung zur Insta
  	}
  	```
 
+  Abhängigkeiten installieren
+  `composer update`
+
     ~~4. Abhänigkeiten installieren~~
     ~~`composer require etgwebkit/etgwebkit`~~
     _Hinweis: Dieser Punkt kann zu gegebenen Zeitpunkt den obigen Punkt ersetzen._
