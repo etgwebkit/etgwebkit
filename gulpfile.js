@@ -20,23 +20,24 @@ var bsProxy       = "http://etgwebkit.dev";
 var paths = {
     src: {
         styles:     'src/scss/etgwebkit.scss',
-        scripts:    ['node_modules/object-fit-images/dist/ofi.browser.js','src/js/**/*.js'],
+        scripts:    [
+                    'node_modules/object-fit-images/dist/ofi.browser.js',
+                    'src/js/**/*.js'
+                    ],
         //images:     'src/img/**/*',
-        //fonts:      'src/fonts/**/*',
-        //templates:  'src/templates/**/*'
+        //fonts:      'src/fonts/**/*'
     },
     dist: {
+        css:        'src/css', 
         styles:     'dist/TL_ROOT/files/etgwebkit/theme/css',
         scripts:    'dist/TL_ROOT/files/etgwebkit/theme/js',
         //images:     'dist/static/img',
-        //fonts:      'dist/static/fonts',
-        //templates:  'dist/TL_ROOT/templates/etgwebkit'
+        //fonts:      'dist/static/fonts'
     },
     watch: {
         styles:     'src/scss/**/*.scss',
         scripts:    'src/js/**/*.js',
-        //images:     'src/img/**/*',
-        //templates:  'dist/TL_ROOT/templates/**/*'
+        //images:     'src/img/**/*'
     }
 };
 
@@ -51,7 +52,7 @@ gulp.task('styles', function() {
     			cascade: false
     		}))
         .pipe(sourcemaps.write('../maps'))
-        .pipe(gulp.dest(paths.dist.styles))
+        .pipe(gulp.dest(paths.dist.css))
         .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
@@ -85,12 +86,6 @@ gulp.task('scripts', function() {
           progressive: true
         }))
         .pipe(gulp.dest(paths.dist.images));
-});*/
-
-/*gulp.task('templates',function(){
-   return gulp.src(paths.src.templates)
-       .pipe(replace('{{version}}',composer_json.version))
-       .pipe(gulp.dest(paths.dist.templates))
 });*/
 
 // copy static files from src to dist
