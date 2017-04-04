@@ -21,9 +21,90 @@
 // --------------------------------------------------
 
 // PUT YOUR OWN STYLES HERE
+.ce_form{
+	position: relative;
+}
+
+.form--light{
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    @include vendor('appearance', 'none');
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px $base-border-color;
+    display: block;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+    color: $color-text;
+
+    &:invalid {
+      box-shadow: none;
+    }
+
+    &:focus {
+      border-bottom-color: $color-default;
+      box-shadow: inset 0 -1px 0 0 $color-default;
+    }
+
+    &::-webkit-input-placeholder{
+    	color: $color-text;
+    }
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    height: 3rem;
+  }
+
+  textarea {
+    padding: 0;
+    min-height: (3rem * 1.25);
+  }
+
+  input[type="submit"]{
+    background-color: $color-gray;
+  }
+
+  select.select{
+    margin: 0;
+  }
+
+  label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: $base-font-weight-bold;
+    margin: 0 0 $base-spacing-unit 0;
+  }
+
+  .widget-select::after{
+		width: 0; 
+	  	height: 0; 
+	  	border-left: 0.5em solid transparent;
+	  	border-right: 0.5em solid transparent;
+	  	border-top: 0.5em solid $color-gray-light;
+	  	position:absolute;
+	  	content:"";
+	  	right: 1rem;
+	  	margin-top: -1.5rem;
+	}
+
+}
+
+
+
 
 //THIS ARE CONTAO 4 HACKS, CAN BE REMOVED AS ITS SUPPORTED FROM EUF
 button.submit {
   @extend %button;
   @extend button.btn--primary;
 }
+

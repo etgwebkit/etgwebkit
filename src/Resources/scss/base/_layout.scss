@@ -26,6 +26,10 @@
   z-index: 1;
   width: 100%;
 
+  .inside{
+    position: relative;
+  }
+
   .logo{
     padding: 2rem 0;
 
@@ -183,56 +187,5 @@
 
   .link_impressum{
     padding-bottom: $base-spacing-unit*2;
-  }
-
-  label {
-    display: block;
-    font-size: 0.9em;
-    font-weight: $base-font-weight-bold;
-    margin: 0 0 $base-spacing-unit 0;
-  }
-
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="tel"],
-  select,
-  textarea {
-    @include vendor('appearance', 'none');
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    border-bottom: solid 1px $base-border-color;
-    color: inherit;
-    display: block;
-    outline: 0;
-    padding: 0;
-    text-decoration: none;
-    width: 100%;
-
-    &:invalid {
-      box-shadow: none;
-    }
-
-    &:focus {
-      border-bottom-color: $color-default;
-      box-shadow: inset 0 -1px 0 0 $color-default;
-    }
-  }
-
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  select {
-    height: 3rem;
-  }
-
-  textarea {
-    padding: 0;
-    min-height: (3rem * 1.25);
-  }
-
-  input[type="submit"]{
-    background-color: $color-gray;
   }
 }
