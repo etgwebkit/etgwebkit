@@ -25,11 +25,6 @@
     "heimrichhannot/contao-slick": "dev-contao4",
     "erdmannfreunde/euf_grid": "2.*"
   },
-  "autoload":{
-    "psr-4": {
-      "ETGWebkit\\": "src/"
-    }
-  },
   "extra": {
     "contao": {
       "sources": {
