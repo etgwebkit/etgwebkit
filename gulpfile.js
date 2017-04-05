@@ -34,8 +34,8 @@ var paths = {
         //fonts:      'dist/static/fonts'
     },
     watch: {
-        styles:     'src/scss/**/*.scss',
-        scripts:    'src/js/**/*.js',
+        styles:     'src/Resources/scss/**/*.scss',
+        scripts:    'src/Resources/js/**/*.js',
         //images:     'src/img/**/*'
     }
 };
