@@ -1,0 +1,20 @@
+.layout_sermon{
+
+	.content{
+		display: inline-block;
+	}
+
+	.small{
+		font-size: 0.9rem;
+	}
+
+	.mejs-container{
+		margin-top: $base-spacing-unit;
+	}
+	
+	.enclosure a{
+		padding-top: $base-spacing-unit/2;
+	}
+
+
+}
