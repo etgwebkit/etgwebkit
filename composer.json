@@ -12,17 +12,11 @@
       "role":"Developer"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/etgwebkit/contao-slick"
-    }
-  ],
   "require": {
     "php": ">=5.3",
     "contao/core-bundle": "~4.1",
     "contao-community-alliance/composer-plugin":"3.*",
-    "heimrichhannot/contao-slick": "dev-contao4",
+    "heimrichhannot/contao-slick": "1.*",
     "erdmannfreunde/euf_grid": "2.*"
   },
   "extra": {
