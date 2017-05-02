@@ -1,6 +1,10 @@
 # ETG Webkit change log
 
 ### DEV
+
+### 0.3.0 (2017-05-02)
+
+* updated sql template (tested)
 * import font Source Sans Pro from Google Fonts directly in webkit
 * fixed tiles width for short description text
 
