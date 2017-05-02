@@ -21,30 +21,9 @@ Das ETG Webkit basiert auf dem CMS Contao in Version 4. Eine Anleitung zur Insta
 
     https://DOMAIN/install.php
 
-4. **composer.json anpassen**
+4. **Abhängigkeiten installieren**
 
-    _Hinweis: Dieser extra Schritt ist solange nötig, bis @heimrichhannot/contao-slick für Contao 4 offiziell angeboten wird._
-
-	```
-	"repositories": [
-    	{
-      	    "type": "vcs",
-      	    "url": "https://github.com/etgwebkit/contao-slick"
-    	}
-  	],
-  	"require":{
- 		...
- 		"etgwebkit/etgwebkit": "^0.2",
-    	"heimrichhannot/contao-slick": "@dev"
- 	}
- 	```
-
-  Abhängigkeiten installieren
-  `composer update`
-
-    ~~4. Abhänigkeiten installieren~~
-    ~~`composer require etgwebkit/etgwebkit`~~
-    _Hinweis: Dieser Punkt kann zu gegebenen Zeitpunkt den obigen Punkt ersetzen._
+    `composer require etgwebkit/etgwebkit`
 
 5. **Datenbankupdate in der Contao Installation durchführen**
     
