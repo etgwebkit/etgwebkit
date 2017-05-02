@@ -1,6 +1,7 @@
 # ETG Webkit change log
 
 ### DEV
+* import font Source Sans Pro from Google Fonts directly in webkit
 * fixed tiles width for short description text
 
 ### 0.2.6 (2017-04-05)
