@@ -2,6 +2,8 @@
 
 ### DEV
 
+* object-fit-images polyfill needs a width, fixed on bullseye
+
 ### 0.3.0 (2017-05-02)
 
 * updated sql template (tested)
