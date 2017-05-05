@@ -5,7 +5,6 @@
     "browser-sync": "^2.15.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-bump": "^2.5.1",
     "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.0.3",
@@ -17,7 +16,6 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-string-replace": "^0.3.0",
     "gulp-uglify": "^2.0.0",
-    "imagemin-pngcrush": "^5.0.0",
-    "object-fit-images": "^2.5.9"
+    "imagemin-pngcrush": "^5.0.0"
   }
 }

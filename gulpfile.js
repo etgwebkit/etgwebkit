@@ -21,7 +21,7 @@ var paths = {
     src: {
         styles:     'src/Resources/scss/etgwebkit.scss',
         scripts:    [
-                    'node_modules/object-fit-images/dist/ofi.browser.js',
+                    'node_modules/object-fit-images/dist/ofi.js',
                     'src/Resources/js/**/*.js'
                     ],
         //images:     'src/img/**/*',
