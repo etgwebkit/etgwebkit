@@ -96,12 +96,5 @@
 	  	right: 1rem;
 	  	margin-top: -1.5rem;
 	}
-
-}
-
-//THIS ARE CONTAO 4 HACKS, CAN BE REMOVED AS ITS SUPPORTED FROM EUF
-button.submit {
-  @extend %button;
-  @extend button.btn--primary;
 }
 
