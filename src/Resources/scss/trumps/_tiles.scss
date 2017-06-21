@@ -95,3 +95,13 @@
   }
 }
 
+.tiles--darker .block{
+  .image_container:before{
+    opacity: 0.4;
+  }
+
+  &:hover .image_container:before{
+    opacity: 0.8;
+  }
+}
+

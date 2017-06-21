@@ -2,6 +2,7 @@
 
 ### DEV
 
+* added class tiles--darker for a darkened picture, if there is text on a tile it's better readable
 * added class hero-arrow to show an arrow down to indicate scrolling 
 * implemented hamburger menu and header navigation (first level)
 * object-fit-images polyfill needs a width, fixed on bullseye
