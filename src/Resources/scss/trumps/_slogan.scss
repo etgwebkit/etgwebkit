@@ -1,3 +1,28 @@
+// VARIABLES
+$arrow--size: 8rem;
+
+.hero-arrow{
+	.mod_article{
+		height: 90vh;
+	}
+
+	&:after{
+		display: block;
+	    content: "↓";
+	    width: $arrow--size;
+	    height: $arrow--size;
+	    margin-left: auto;
+	    margin-right: auto;
+	    border-radius: $arrow--size/2;
+	    position: relative;
+	    margin-top: -$arrow--size/4;
+	    background-color: $color-page-background;
+	    font-size: 3.5rem;
+	    padding: 0.5rem 3rem;
+	    color: $color-default;
+	}
+}
+
 .slogan{
   padding-bottom: 5rem;
   font-weight: 300;
