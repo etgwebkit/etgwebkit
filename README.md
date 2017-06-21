@@ -19,7 +19,7 @@ Das ETG Webkit basiert auf dem CMS Contao in Version 4. Eine Anleitung zur Insta
 
 3. **Contao Installationstool ausführen:**
 
-    https://DOMAIN/install.php
+    https://DOMAIN/contao/install
 
 4. **Abhängigkeiten installieren**
 

@@ -2,6 +2,7 @@
 
 ### DEV
 
+* implemented hamburger menu and header navigation (first level)
 * object-fit-images polyfill needs a width, fixed on bullseye
 
 ### 0.3.0 (2017-05-02)

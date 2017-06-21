@@ -25,13 +25,15 @@
   position: absolute;
   z-index: 1;
   width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 
   .inside{
     position: relative;
   }
 
   .logo{
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 
     display: block;
     border-bottom: 0;
@@ -40,6 +42,7 @@
     letter-spacing:$base-font-letter-spacing;
     text-decoration: none;
     text-transform: uppercase;
+    float: left;
 
     > * {
       display: inline-block;

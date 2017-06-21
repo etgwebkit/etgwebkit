@@ -21,3 +21,42 @@
 // --------------------------------------------------
 
 // PUT YOUR OWN STYLES HERE
+.nav-head {
+    width: 100%;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+    max-height: 100vh;
+    transition: max-height 0.5s ease;
+
+    a{
+        text-decoration: none;
+        position: relative;        
+    }
+
+     a:hover{
+        color: $color-gray;
+        transition: color 0.3s ease;
+    }
+}
+
+.nav-height.invisible{
+	max-height: 0;
+}
+
+@include media-query(screen-offcanvas) {
+	 .nav-head{
+      	float: right;
+      	
+        font-size: 1rem;
+        width: auto;
+
+        //Make everything visible
+        position: relative;
+        height: auto;
+        display: block;
+        top: 0;
+        left: 0;
+    }
+}

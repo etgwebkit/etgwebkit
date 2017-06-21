@@ -80,4 +80,16 @@ $base-border-color:           $color-gray-light !default;
 
 $base-border:                 $base-border-width solid $base-border-color !default;
 
+//hamburgers variables
+$hamburger-padding-x                       : 0rem;
+$hamburger-padding-y                       : 1.5rem;
+$hamburger-layer-width                     : 2rem;
+$hamburger-layer-height                    : 0.3rem;
+$hamburger-layer-spacing                   : 0.3rem;
+$hamburger-layer-color                     : $color-brand;
+$hamburger-layer-border-radius             : 0.2rem;
+$hamburger-types: (
+  squeeze
+);
+
 @import "../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/variables";
