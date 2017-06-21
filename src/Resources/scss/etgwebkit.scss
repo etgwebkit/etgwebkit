@@ -16,9 +16,9 @@
 @import "mixins/functions";
 
 // GENERIC
-@import "../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/normalize";
-@import "../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/contao-reset";
-@import "../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/box-sizing";
+@import "../../../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/normalize";
+@import "../../../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/contao-reset";
+@import "../../../vendor/erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/box-sizing";
 
 
 // BASE
@@ -51,7 +51,4 @@
 @import "trumps/slick";
 @import "trumps/headline-link";
 @import "trumps/news-sermon";
-
-
-//Third party COMPOMENTS
-@import "hamburger";
+@import "trumps/hamburger";
