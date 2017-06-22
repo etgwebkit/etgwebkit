@@ -22,6 +22,7 @@ var paths = {
         styles:     'src/Resources/scss/etgwebkit.scss',
         scripts:    [
                     'node_modules/object-fit-images/dist/ofi.js',
+                    'node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
                     'src/Resources/js/**/*.js'
                     ],
         //images:     'src/img/**/*',
@@ -94,7 +95,7 @@ gulp.task('copy', function() {
 });
 
 // watcher task
-gulp.task('serve', ['styles'], function() {
+gulp.task('serve', ['styles', 'scripts'], function() {
     // https://www.browsersync.io/docs/gulp#gulp-sass-maps
     browserSync.init({
         proxy: bsProxy,
