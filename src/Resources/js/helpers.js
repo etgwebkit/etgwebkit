@@ -26,8 +26,16 @@
 	});
 
 
-	$(".hamburger").click(function(){
+    function toggleMainMenu(){
 		$(".nav-head").toggleClass('invisible');
-		$(this).toggleClass('is-active');
+		$(".hamburger").toggleClass('is-active');
+	}
+
+	$(".hamburger").click(function(){
+		toggleMainMenu();
 	});
+	$(".nav-head a").click(function(){
+		toggleMainMenu();
+	});
+	
 })(jQuery);

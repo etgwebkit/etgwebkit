@@ -17,6 +17,7 @@
     "gulp-string-replace": "^0.3.0",
     "gulp-uglify": "^2.0.0",
     "hamburgers": "^0.8.1",
-    "imagemin-pngcrush": "^5.0.0"
+    "imagemin-pngcrush": "^5.0.0",
+    "object-fit-images": "^3.2.3"
   }
 }
