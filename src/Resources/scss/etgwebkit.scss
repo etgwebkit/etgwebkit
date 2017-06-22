@@ -52,3 +52,11 @@
 @import "trumps/headline-link";
 @import "trumps/news-sermon";
 @import "trumps/hamburger";
+
+
+//Modal Bootstrap
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/opacity";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/vendor-prefixes";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/clearfix";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
