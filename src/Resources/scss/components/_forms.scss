@@ -52,10 +52,6 @@
       border-bottom-color: $color-default;
       box-shadow: inset 0 -1px 0 0 $color-default;
     }
-
-    &::-webkit-input-placeholder{
-    	color: $color-text;
-    }
   }
 
   input[type="text"],
@@ -70,7 +66,7 @@
     min-height: (3rem * 1.25);
   }
 
-  input[type="submit"]{
+  button[type="submit"]{
     background-color: $color-gray;
   }
 
@@ -96,5 +92,37 @@
 	  	right: 1rem;
 	  	margin-top: -1.5rem;
 	}
+}
+
+.form--light--infobar{
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+
+    border-color: $color-page-background;
+    color: $color-page-background;
+
+    &:focus {
+      border-color: darken($color-page-background,30%);
+      box-shadow-color: lighten($color-default,10%);
+    }
+
+    &::placeholder{
+      color: $color-page-background;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+  }
+
+    button[type="submit"]{
+      background-color: lighten($color-default,10%);
+      //background-color: $color-page-background;
+      //color: $color-default;
+      width: 100%;
+    }  
 }
 
