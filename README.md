@@ -1,4 +1,4 @@
-# Simple Webkit for ETG Churches
+![ETG Webkit Logo](https://etgwebkit.diging.de/files/github/etgwebkit-icon.png)
 
 # Installation
 Das ETG Webkit basiert auf dem CMS Contao in Version 4. Eine Anleitung zur Installation von Contao findet sich hier.
