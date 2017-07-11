@@ -2,6 +2,12 @@
 
 ### DEV
 
+### 0.4.1 (2017-6-30)
+
+* introduced forms in infobar with classes .form--light and .form--light--infobar
+
+### 0.4.0 (2017-6-22)
+
 * introduced module hero for hero image with following classes .hero--full-height, .hero--full-height--shorter, .hero--header, .hero-background, .hero-text, .hero-arrow
 * added class tiles--darker for a darkened picture, if there is text on a tile it's better readable
 * added class hero-arrow to show an arrow down to indicate scrolling 

@@ -33,7 +33,7 @@ Das ETG Webkit basiert auf dem CMS Contao in Version 4. Eine Anleitung zur Insta
 
 6. **Im Installationstool Template importieren**
 
-	Unter "Ein Template" importieren das Template etgwekit.sql auswählen und importieren.
+	Unter "Ein Template" importieren das Template etgwebkit.sql auswählen und importieren.
 
 7. **Adminbenutzer festlegen**
 
