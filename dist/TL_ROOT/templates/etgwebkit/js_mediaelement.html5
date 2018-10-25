@@ -1,0 +1,37 @@
+<?php
+
+// Add the mediaelement style sheet
+$GLOBALS['TL_CSS'][] = 'assets/mediaelement/css/mediaelementplayer.min.css|static';
+
+?>
+
+<script src="<?= TL_ASSETS_URL ?>assets/mediaelement/js/mediaelement-and-player.min.js"></script>
+<script>
+  (function() {
+    var e = document.querySelectorAll(':not(picture):not(.hero-background) > video, :not(picture) > audio');
+    for (var i=0; i<e.length; i++) {
+      new MediaElementPlayer(e[i], {
+        // Put custom options here
+        pluginPath: '<?= Environment::get('path') ?>/assets/mediaelement/plugins/'
+      });
+    }
+    
+    //Hero Video Adjustments (ContentElement VideoPlayer with class hero-background)
+    var h = document.querySelectorAll('.hero-background > video');
+    for (var i=0; i<h.length; i++) {
+      new MediaElementPlayer(h[i], {
+        // Put custom options here
+        pluginPath: '<?= Environment::get('path') ?>/assets/mediaelement/plugins/',
+        stretching: 'fill',
+        enableKeyboard: false,
+        clickToPlayPause: false,
+      	hideVideoControlsOnLoad: true,
+      	hideVideoControlsOnPause: true,
+      	/*videoWidth: '100%',
+      	videoHeight: '100%',*/
+      	muted: true,
+      	loop: true
+      });
+    }
+  })();
+</script>

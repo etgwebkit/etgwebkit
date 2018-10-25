@@ -3,6 +3,10 @@
   padding: 0;
   background-color: $color-page-background;
 
+  .inside{
+    height: 100%;
+  }
+
   .slick-dots{
     position: absolute;
     bottom: 0rem;
@@ -28,28 +32,19 @@
   }
 
   &--full-height{
-    height: 100vh;
+    height: calc(100vh - 5rem);
 
-    .ce_image img{
-      height: 100vh;
-    }
+    /*.ce_image img{
+      height: calc(100vh - 5rem);
+    }*/
   }
 
   &--full-height--shorter{
-    height: 95vh;
+    height: calc(100vh - 10rem);
 
-     .ce_image img{
-      height: 95vh;
-    }
-  }
-
- //Wenn auf dem body header--transparent angegeben ist, muss hero--header auch aktiviert sein.
-  &--full-height.hero--header{
-    height: calc(100vh - 5rem);
-  }
-
-   &--full-height--shorter.hero--header{
-    height: calc(95vh - 5rem);
+     /*.ce_image img{
+      height: calc(100vh - 10rem);
+    }*/
   }
 
   &-background{
@@ -71,6 +66,21 @@
     .slick-slide{
       padding: 0;
     }
+
+    //Darken
+    &--darken:after{
+      content:"";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0,0,0,0.5);
+      top: 0;
+    }
+
+    //Don't show any overlays on the video in hero background
+    .mejs__overlay{
+      display: none;
+    }
   }
 
   &-text{
@@ -78,11 +88,7 @@
     width: 60%;
     margin: 0 auto;
     color: $color-text--inverted;
-    
-    padding-top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    @include vertical-align();
 
     h1,h2,h3,h4,h5,h6{
       color: $color-text--inverted;
@@ -109,3 +115,16 @@
     }
   }
 }
+
+.header--transparent{
+  .hero--full-height{
+    height: 100vh;
+
+
+  }
+
+  .hero--full-height--shorter{
+    height: calc(100vh - 5rem);
+  }
+}
+ 

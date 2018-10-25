@@ -74,7 +74,7 @@
   .mod_article{
      @include wrapper-max(none);
       padding: 0;
-      height: 100vh;
+      //height: 100vh;
 
     .first{
       position: absolute;
@@ -93,12 +93,8 @@
       font-size: 1.3em;
 
       color: $color-text--inverted;
-      
-      padding-top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      
+      @include vertical-align;
+      //position: absolute;
 
     h1{
       color: $color-text--inverted;
