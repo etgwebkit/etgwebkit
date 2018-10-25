@@ -1,0 +1,17 @@
+contao:
+    prepend_locale: false
+    localconfig:
+        licenseAccepted: true
+        #enableSearch: false
+        #disableCron: true
+        folderUrl: false
+
+        installPassword: "%install_password%"
+        dateFormat: "d.m.Y"
+        datimFormat: "d.m.Y H:i"
+        timeZone: 'Europe/Berlin'
+
+        # Adjust the upload image settings
+        maxFileSize: 81920000
+        imageWidth: 3000
+        imageHeight: 3000
