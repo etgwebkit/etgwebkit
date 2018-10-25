@@ -1,6 +1,9 @@
 # ETG Webkit change log
 
-### DEV
+### 0.5.0 (2018-10-26)
+
+* new feature .band to seperate sections with a background color, use .band--thick, .band--thin, .band--grey, .band--grey-light, default color is brand color.
+* now you can use videos in the hero section with content element video. use .hero-background as class, with .hero-background--darken you can dimm the background
 
 ### 0.4.1 (2017-6-30)
 
