@@ -1,0 +1,34 @@
+.band{
+	@include wrapper-max(none);
+  
+  	padding-top: 3rem;
+  	padding-bottom: 3rem;
+  	background-color: $color-default;
+  	
+  	&--gray{
+  		background-color: $color-gray;	
+  	}
+
+  	&--gray-light{
+  		background-color: $color-gray-light;
+  	}
+
+  	&--thin{
+  		padding-top: 1rem;
+  		padding-bottom: 1rem;
+  	}
+
+  	&--fat{
+  		padding-top: 5rem;
+  		padding-bottom: 5rem;
+  	}
+
+  	&--full{
+  		height: 100vh;
+  	}
+
+  	.inside{
+  		@include wrapper-max;
+  		@include padding-default;
+  	}
+}
