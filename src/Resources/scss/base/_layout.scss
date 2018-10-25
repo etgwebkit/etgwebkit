@@ -93,8 +93,12 @@
       font-size: 1.3em;
 
       color: $color-text--inverted;
-      @include vertical-align;
-      //position: absolute;
+      
+      padding-top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
 
     h1{
       color: $color-text--inverted;
