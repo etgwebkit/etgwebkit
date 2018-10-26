@@ -4,28 +4,29 @@
   	padding-top: 3rem;
   	padding-bottom: 3rem;
   	background-color: $color-default;
+    color: $color-text--inverted;
   	
   	//Different Colors
-  	&--gray{
+  	&.band--gray{
   		background-color: $color-gray;	
   	}
 
-  	&--gray-light{
+  	&.band--gray-light{
   		background-color: $color-gray-light;
   	}
 
   	//Different Sizes
-  	&--thin{
+  	&.band--thin{
   		padding-top: 1rem;
   		padding-bottom: 1rem;
   	}
 
-  	&--fat{
+  	&.band--fat{
   		padding-top: 5rem;
   		padding-bottom: 5rem;
   	}
 
-  	&--full{
+  	&.band--full{
   		height: 100vh;
   	}
 
