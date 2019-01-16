@@ -1,10 +1,10 @@
-.mejs-container{
+.mejs-container, .mejs__container{
 	
-	.mejs-controls{
+	.mejs-controls, .mejs__controls:not([style*='display: none']){
   		background: $color-default;
 
-  		.mejs-time-rail .mejs-time-total{
-  			background: $color-gray-light;
+  		.mejs-time-rail .mejs-time-total, .mejs__time-rail, .mejs__time-total{
+  			//background: $color-gray-light;
 		}
 	}	  
 } 

@@ -1,5 +1,7 @@
 .layout_sermon{
 
+	margin-bottom: 2rem;
+
 	.content{
 		display: inline-block;
 	}
@@ -8,13 +10,11 @@
 		font-size: 0.9rem;
 	}
 
-	.mejs-container{
+	.mejs-container, .mejs__container{
 		margin-top: $base-spacing-unit;
 	}
 	
 	.enclosure a{
 		padding-top: $base-spacing-unit/2;
 	}
-
-
 }

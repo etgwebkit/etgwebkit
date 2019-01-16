@@ -25,12 +25,12 @@
   "extra": {
     "contao": {
       "sources": {
-        "dist/TL_ROOT/files/etgwebkit": "files/etgwebkit",
+        "dist/TL_ROOT/files/etgwebkit": "web/etgwebkit",
         "dist/TL_ROOT/templates/etgwebkit":"templates/etgwebkit",
         "dist/TL_ROOT/templates/etgwebkit.sql": "templates/etgwebkit.sql"
       },
       "files": {
-        "dist/TL_ROOT/app/config/config.yml": "app/config/config.yml"
+        "dist/TL_ROOT/app/config/config.webkit.yml": "app/config/config.yml"
       }
     }
   }

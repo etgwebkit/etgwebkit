@@ -25,7 +25,6 @@
 		}
 	});
 
-
     function toggleMainMenu(){
 		$(".nav-head").toggleClass('invisible');
 		$(".hamburger").toggleClass('is-active');
