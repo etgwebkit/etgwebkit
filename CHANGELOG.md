@@ -1,5 +1,9 @@
 # ETG Webkit change log
 
+### 0.5.2 (2019-01-16)
+* added entry of all resources to web/etgwebkit instead files/etgwebkit, so url is always like URL.TLD/etgwebkit/images/logo.svg
+* added a few css selectors to make it compatible to contao 4.6 and future versions.
+
 ### 0.5.0 (2018-10-26)
 
 * new feature .band to seperate sections with a background color, use .band--thick, .band--thin, .band--grey, .band--grey-light, default color is brand color.
