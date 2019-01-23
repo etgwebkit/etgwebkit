@@ -1,3 +1,5 @@
+import objectFitImages from 'object-fit-images';
+
 (function($) {
 
     var $body = $('body');

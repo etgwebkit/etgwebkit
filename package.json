@@ -1,27 +1,19 @@
 {
   "name": "etgwebkit",
   "private": true,
-  "dependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "browser-sync": "^2.26.3",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-include": "^2.2.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-pixrem": "^1.0.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-string-replace": "^0.3.0",
-    "gulp-uglify": "^2.0.0",
-    "hamburgers": "^0.8.1",
-    "imagemin-pngcrush": "^5.0.0",
-    "object-fit-images": "^3.2.3"
-  },
   "devDependencies": {
-    "gulp-sass": "^2.3.2",
-    "node-sass": "^4.9.4"
-  }
+    "hamburgers": "^0.8.1",
+    "object-fit-images": "^3.2.3",
+    "@symfony/webpack-encore": "^0.16.0",
+    "autoprefixer": "^8.5.0",
+    "image-webpack-loader": "^4.3.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^6.0.6",
+    "script-loader": "^0.7.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ios >= 8"
+  ]
 }
