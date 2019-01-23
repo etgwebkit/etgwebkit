@@ -19,12 +19,12 @@
     }
   ],
   "require": {
-    "php": ">=5.3",
+    "php": ">=7.1",
     "contao/core-bundle": "~4.4",
     "heimrichhannot/contao-slick": "1.*",
     "erdmannfreunde/euf_grid": "2.*",
     "jonnysp/cookieconsent": "^0.0.8",
-    "jonsuh/hamburgers": "1.1.3@dev"
+    "jonsuh/hamburgers": "dev-master"
   },
   "require-dev": {
     "erdmannfreunde/euf_nutshell": "~0.2"
