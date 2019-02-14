@@ -1,7 +1,11 @@
 # ETG Webkit change log
 
+### 0.5.3 (2019-02-14) 
+* bugfix hero next and prev arrows in safari and IE
+
 ### 0.5.2 (2019-01-16)
 * added entry of all resources to web/etgwebkit instead files/etgwebkit, so url is always like URL.TLD/etgwebkit/images/logo.svg
+As the main directory changed, please use a symlink from the files/etgwebkit folder to vendor/etgwebkit/etgwebkit/dist/TL_ROOT/files/etgwebkit
 * added a few css selectors to make it compatible to contao 4.6 and future versions.
 
 ### 0.5.0 (2018-10-26)
