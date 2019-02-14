@@ -27,6 +27,7 @@
   position: absolute;
   z-index: 1;
   padding: 0 1rem;
+  width: 50px;
 
   &:hover, &:active, &:focus{
     outline: 0;
@@ -51,6 +52,7 @@
   &::before{
     border-right: 0.2em solid $color-default;
     border-top: 0.2em solid $color-default;
+    margin-left: -5px;
 
   }
 }
