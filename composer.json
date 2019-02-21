@@ -17,7 +17,8 @@
     "contao/core-bundle": "~4.4",
     "heimrichhannot/contao-slick": "1.*",
     "erdmannfreunde/euf_grid": "2.*",
-    "jonnysp/cookieconsent": "^0.0.8"
+    "jonnysp/cookieconsent": "^0.0.8",
+    "diging/contao-style-bricks": "dev-master@dev"
   },
   "require-dev": {
     "erdmannfreunde/euf_nutshell": "~0.2"
