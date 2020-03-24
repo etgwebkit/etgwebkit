@@ -7,19 +7,22 @@
   "license": "GPL-3.0+",
   "authors":[
     {
-      "name":"Samuel Heer | diging.",
-      "homepage":"http://diging.de",
+      "name":"Samuel Heer | ex-akt.",
+      "homepage":"https://www.ex-akt.de",
       "role":"Developer"
     }
   ],
+  "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ex-akt/contao-style-bricks-bundle.git"
+        }
+    ],
   "require": {
     "php": ">=7.1",
     "contao/core-bundle": "~4.4",
     "heimrichhannot/contao-slick": "1.*",
-    "erdmannfreunde/euf_grid": "2.*",
-    "jonnysp/cookieconsent": "^0.0.8",
-    "diging/contao-style-bricks": "dev-master@dev",
-    "erdmannfreunde/euf_nutshell": "~0.2"
+    "ex-akt/contao-style-bricks-bundle": "dev-master@dev"
   },
   "extra": {
     "contao": {
