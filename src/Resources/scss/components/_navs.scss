@@ -16,7 +16,7 @@
 
 // --------------------------------------------------
 
-@import "../../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
+//@import "../../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
 
 // --------------------------------------------------
 
@@ -35,12 +35,12 @@
     }
 
      a:hover{
-        color: $color-gray;
+        color: var(--color-gray);
         transition: color 0.3s ease;
     }
 }
 
-@include media-query(screen-offcanvas) {
+@include media-query(screen-md) {
 	 .nav-head{
       	float: right;
       	

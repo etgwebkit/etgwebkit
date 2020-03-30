@@ -2,12 +2,11 @@
   "name": "etgwebkit",
   "private": true,
   "devDependencies": {
-    "hamburgers": "^0.8.1",
-    "object-fit-images": "^3.2.3",
-    "@symfony/webpack-encore": "^0.16.0",
+    "@symfony/webpack-encore": "^0.28.3",
     "autoprefixer": "^8.5.0",
     "image-webpack-loader": "^4.3.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
+    "object-fit-images": "^3.2.3",
     "postcss-loader": "^2.1.5",
     "sass-loader": "^6.0.6",
     "script-loader": "^0.7.2"

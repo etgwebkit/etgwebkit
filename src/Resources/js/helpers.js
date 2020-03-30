@@ -1,4 +1,7 @@
-import objectFitImages from 'object-fit-images';
+import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/polyfills';
+import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/form-placeholder-label-animation';
+
+/*import objectFitImages from 'object-fit-images';
 
 (function($) {
 
@@ -40,3 +43,4 @@ import objectFitImages from 'object-fit-images';
 	});
 	
 })(jQuery);
+*/

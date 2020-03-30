@@ -16,12 +16,12 @@
 
 // --------------------------------------------------
 
-@import "../../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/layout";
+//@import "../../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/layout";
 
 // --------------------------------------------------
 
 // PUT YOUR OWN STYLES HERE
-[id="header"], .section-header{
+/*[id="header"], .section-header{
   z-index: 1;
   width: 100%;
 
@@ -56,7 +56,7 @@
       }
     }
   }
-}
+}*/
 
 .header--transparent [id="header"]{
   position: absolute;
@@ -68,44 +68,6 @@
 }
 
 //DEPRECATED WILL BE REMOVED IN VERSION 1
-[id="heroImage"]{
-  background-color: $color-page-background;
-
-  .mod_article{
-     @include wrapper-max(none);
-      padding: 0;
-      //height: 100vh;
-
-    .first{
-      position: absolute;
-      width: 100%;
-    }
-  }
-
-  img{
-    object-fit: cover;
-    height: 100vh;
-    width: 100%;
-    font-family: 'object-fit: cover;' //IE HACK for object-fit polyfill
-  }
-
-  .ce_text{
-      font-size: 1.3em;
-
-      color: $color-text--inverted;
-      @include vertical-align;
-      //position: absolute;
-
-    h1{
-      color: $color-text--inverted;
-      font-weight: $base-font-weight-bold;
-      line-height: 3rem;
-      font-size: 2.5rem;
-
-    }
-  }
-}
-
 [id="main"], .section-main{
   //padding-top: 5rem;
   margin-bottom: 3rem;
@@ -140,11 +102,11 @@
 
 [id="Infobar"], .section-Infobar{
 
-  background-color: $color-default;
-  color: $color-text--inverted;
+  background-color: var(--color-default);
+  color: var(--color-text--inverted);
 
   a {
-    color: $color-text--inverted;
+    color: var(--color-text--inverted);
   }
 
   .block{
@@ -156,8 +118,8 @@
   }
 
   .event {
-    @extend %clearfix;
-    margin-bottom: $base-spacing-unit/2;
+    //@extend %clearfix;
+    margin-bottom: calc(var(--base-spacing-unit)/2);
   }
 
   .layout_upcoming {
@@ -173,18 +135,25 @@
   }
 
   .row > div{
-    margin-bottom: $base-spacing-unit;
+    margin-bottom: var(--base-spacing-unit);
   }
 }
 
 [id="footer"], .section-footer{
   padding: 5rem 0;
-  background-color: $color-page-background-alt;
 
   .mod_article{
     >div{
-      margin-bottom: $base-spacing-unit;
+      margin-bottom: var(--base-spacing-unit);
     }
+  }
+
+  .submit{
+    width: 100%;
+  }
+
+  h6{
+    margin-bottom: var(--base-spacing-unit);
   }
 
   h2{
@@ -192,6 +161,8 @@
   }
 
   .link_impressum{
-    padding-bottom: $base-spacing-unit*2;
+    padding-bottom: var(--base-spacing-unit--lg);
   }
+
+
 }

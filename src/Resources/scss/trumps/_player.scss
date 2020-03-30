@@ -1,7 +1,7 @@
 .mejs-container, .mejs__container{
 	
 	.mejs-controls, .mejs__controls:not([style*='display: none']){
-  		background: $color-default;
+  		background: var(--color-default);
 
   		.mejs-time-rail .mejs-time-total, .mejs__time-rail, .mejs__time-total{
   			//background: $color-gray-light;

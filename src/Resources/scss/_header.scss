@@ -1,0 +1,38 @@
+html{
+  --header-height: 5rem;
+  --nav--main__toggler-border: 0;
+  --nav--main__toggler-height: 0;
+  --nav--main__color: var(--color-brand);
+  --nav--main__color-hover: var(--color-gray);
+  --logo-padding: 1.5rem;
+}
+
+.section-header{
+  background: var(--color-page-background);
+}
+
+.section-header .logo, [id=header] .logo {
+  color: inherit;
+  font-weight: 900;
+  letter-spacing: .25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  //float: left;
+
+  &>*{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .symbol{
+    margin-right: 1em;
+  }
+}
+
+.nav-bricks{
+  font-size: 1rem;
+
+  strong.active, .nav-bricks a:hover, .nav-bricks a.trail{
+    font-weight: bolder;
+  }
+}
