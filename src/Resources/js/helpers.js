@@ -1,5 +1,11 @@
 import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/polyfills';
 import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/form-placeholder-label-animation';
+import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/form-error';
+
+import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/navigation';
+import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/slider';
+//import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scripts/lightbox';
+
 
 /*import objectFitImages from 'object-fit-images';
 
