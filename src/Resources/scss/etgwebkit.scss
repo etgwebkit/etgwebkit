@@ -26,6 +26,7 @@
 @import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/components/tables";
 
 @import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/extensions/fontawesome";
+@import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/extensions/cookiebar";
 
 // COMPONENTS
 //@import "components/events";
@@ -35,7 +36,7 @@
 //@import "components/news";
 
 //@import "trumps/slick";
-//@import "trumps/headline-link";
+
 
 @import "base/layout";
 @import "base/type";
@@ -43,6 +44,7 @@
 @import "trumps/tiles";
 @import "trumps/player";
 @import "trumps/news-sermon";
+@import "trumps/headline-link";
 
 @import "header";
 
