@@ -19,7 +19,7 @@
         }
     ],
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.2",
     "contao/core-bundle": "~4.4",
     "heimrichhannot/contao-slick-bundle": "1.*",
     "ex-akt/contao-style-bricks-bundle": "dev-master@dev"
@@ -27,12 +27,7 @@
   "extra": {
     "contao": {
       "sources": {
-        "dist/TL_ROOT/files/etgwebkit": "web/etgwebkit",
-        "dist/TL_ROOT/templates/etgwebkit":"templates/etgwebkit",
-        "dist/TL_ROOT/templates/etgwebkit.sql": "templates/etgwebkit.sql"
-      },
-      "files": {
-        "dist/TL_ROOT/app/config/config.webkit.yml": "app/config/config.yml"
+        "dist/TL_ROOT/files/etgwebkit": "web/etgwebkit"
       }
     }
   }
