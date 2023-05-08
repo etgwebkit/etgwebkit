@@ -1,6 +1,7 @@
 var Encore = require('@symfony/webpack-encore');
 
 Encore
+    .disableSingleRuntimeChunk()
     // directory where all compiled assets will be stored
     .setOutputPath('dist/TL_ROOT/files/etgwebkit/theme/')
 

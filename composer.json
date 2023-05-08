@@ -19,8 +19,8 @@
         }
     ],
   "require": {
-    "php": ">=7.2",
-    "contao/core-bundle": "~4.4",
+    "php": ">=8.0",
+    "contao/core-bundle": "^4.9",
     "heimrichhannot/contao-slick-bundle": "1.*",
     "ex-akt/contao-style-bricks-bundle": "dev-master@dev"
   },
