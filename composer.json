@@ -16,7 +16,7 @@
     "php": ">=8.0",
     "contao/core-bundle": "^4.9",
     "heimrichhannot/contao-slick-bundle": "1.*",
-    "ex-akt/contao-style-bricks-bundle": "dev-style-manager@dev"
+    "ex-akt/contao-style-bricks-bundle": "^1.x-dev@dev"
   },
   "extra": {
     "contao": {
