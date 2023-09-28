@@ -1,13 +1,9 @@
 @import "fonts";
 @import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/nutshell";
 
-//Layout Defaults
-@import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/header/header1";
-@import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/footer/footer1";
 
 //Components
-@import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/navigation/navigation'; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
-
+@import '../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/navigation/navigation';
 @import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/components/accordion";
 @import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/components/ajax";
 @import "../../../../../ex-akt/contao-style-bricks-bundle/assets/scss/components/band";
