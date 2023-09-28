@@ -1,13 +1,13 @@
 html{
-  --header-height: 5rem;
-  --nav--main__toggler-border: 0;
-  --nav--main__toggler-height: 0;
-  --nav--main__color: var(--color-brand);
-  --nav--main__color-hover: var(--color-gray);
-  --logo-padding: 1.5rem;
+  //--header-height: 5rem;
+  //--nav--main__toggler-border: 0;
+  //--nav--main__toggler-height: 0;
+  //--nav--main__color: var(--color-brand);
+  //--nav--main__color-hover: var(--color-gray);
+  //--logo-padding: 1.5rem;
 }
 
-.section-header{
+.section-header, header{
   background: var(--color-page-background);
 }
 
@@ -18,6 +18,7 @@ html{
   text-decoration: none;
   text-transform: uppercase;
   //float: left;
+  margin: 1.5rem 0;
 
   &>*{
     display: inline-block;
@@ -26,13 +27,14 @@ html{
 
   .symbol{
     margin-right: 1em;
+    width: 60px;
   }
 }
 
-.nav-bricks{
+.nav-bricks-main{
   font-size: 1rem;
 
-  strong.active, .nav-bricks a:hover, .nav-bricks a.trail{
+  strong.active, & a:hover, & a.trail{
     font-weight: bolder;
   }
 }
