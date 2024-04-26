@@ -108,10 +108,10 @@
 [id="Infobar"], .section-Infobar{
 
   background-color: var(--color-default);
-  color: var(--color-text--inverted);
+  color: var(--color-text-inverted);
 
   a {
-    color: var(--color-text--inverted);
+    color: var(--color-text-inverted);
   }
 
   .block{
@@ -168,6 +168,4 @@
   .link_impressum{
     padding-bottom: var(--base-spacing-unit--lg);
   }
-
-
 }
