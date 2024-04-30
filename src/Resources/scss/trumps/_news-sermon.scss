@@ -25,10 +25,10 @@ html{
 	.enclosure a{
 		padding-top: calc(var(--base-spacing-unit)/2);
 	}
-}
 
-.table_head, .media{
-	display: none;
+	.table_head, .media{
+		display: none;
+	}
 }
 
 .layout_sermon{
