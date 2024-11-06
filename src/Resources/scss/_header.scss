@@ -8,8 +8,11 @@
   letter-spacing: .25em;
   text-decoration: none;
   text-transform: uppercase;
-  //float: left;
-  margin: 1.5rem 0;
+  margin: var(--base-spacing-unit) 0;
+
+  @include media-query(screen-sm){
+    margin: var(--base-spacing-unit-lg) 0;
+  }
 
   &>*{
     display: inline-block;
